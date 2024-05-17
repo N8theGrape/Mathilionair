@@ -1,0 +1,42 @@
+[
+    {
+        "question": "What is Hanafi's favorite color?",
+        "answers": {
+            "A": "Red",
+            "B": "Green",
+            "C": "Blue",
+            "D": "Purple"
+        },
+        "correctAnswer": "D"
+    },
+    {
+        "question": "No Question?",
+        "answers": {
+            "A": "Correct",
+            "B": "Wrong",
+            "C": "Wrong",
+            "D": "Wrong"
+        },
+        "correctAnswer": "A"
+    },
+    {
+        "question": "No Question?",
+        "answers": {
+            "A": "Wrong",
+            "B": "Wrong",
+            "C": "Correct",
+            "D": "Wrong"
+        },
+        "correctAnswer": "C"
+    },
+    {
+        "question": "What was the answer to question 1?",
+        "answers": {
+            "A": "C",
+            "B": "A",
+            "C": "D",
+            "D": "B"
+        },
+        "correctAnswer": "C"
+    }
+]
