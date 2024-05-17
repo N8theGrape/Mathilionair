@@ -10,14 +10,14 @@
         "correctAnswer": "D"
     },
     {
-        "question": "No Question?",
+        "question": "What are the requirements for the Mean Value Theorem?",
         "answers": {
-            "A": "Correct",
-            "B": "Wrong",
-            "C": "Wrong",
-            "D": "Wrong"
+            "A": "Continuous",
+            "B": "Differentiable",
+            "C": "Continuous & Differentiable",
+            "D": "None of the Above"
         },
-        "correctAnswer": "A"
+        "correctAnswer": "C"
     },
     {
         "question": "No Question?",
