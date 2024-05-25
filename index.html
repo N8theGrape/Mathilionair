@@ -1,18 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Nathan Gillespie">
-    <meta name="description" content="Extra credit website for AP Calculus BC.">
-    <title>Who want's to be a Mathillionair</title>
-    <link rel="icon" type="image/png" href="icon.ico">
-    <style>
-
-    </style>
-</head>
-<body>
-    <div id="header"></div>
-    <div id="output"></div>
-</body>
+<html>
+    <head>
+        <title>Who wants to be a Mathillionaire?</title>
+        <meta name="author" content="Nathan Gillespie">
+        <meta name="description" content="Extra credit website for AP Calculus BC.">
+        <link rel="icon" type="image/png" href="./images/icon.ico">
+        <link rel="stylesheet" href="./styles/styles.css">
+        <link rel="stylesheet" href="./styles/FontSize.css">
+        <link rel="stylesheet" href="./styles/sizes.css">
+        <link rel="stylesheet" href="./styles/rounding.css">
+        <link rel="stylesheet" href="./styles/padding.css">
+        <script src="./scripts/Main.js"></script>
+    </head>
+    <body>
+        <div id="TitlePage">
+            <br>
+            <header>
+                <center FontSize-150>
+                    <h2>Who Wants to Be a</h2>
+                    <h1>Mathillionaire</h1>
+                </center>
+            </header>
+            <br>
+            <main>
+                <center>
+                    <video w-50 square border-1px-solid-black></video>
+                </center>
+                <br>
+                <div w-100>
+                    <button bold startButton onclick="beginGame();">
+                        Begin Game
+                    </button>
+                </div>
+            </main>
+            <br>
+        </div>
+        <div flex id="Game">
+            <center>
+                <br><br><br><br><br>
+                <div question w-54 round-50vw pad-1>
+                    <h2>Error Error Error Error Error Error Error Error Error Error Error Error Error?</h2>
+                </div>
+                <br>
+                <div id="choices">
+                    <div flex w-60>
+                        <button w-45 pad-1 round-50vw id="choice1">
+                            1) Error Error Error Error Error
+                        </button>
+                        <button w-45 pad-1 round-50vw id="choice2">
+                            2) Error Error Error Error Error
+                        </button>
+                    </div>
+                    <div flex w-60>
+                        <button w-45 pad-1 round-50vw id="choice3">
+                            3) Error Error Error Error Error
+                        </button>
+                        <button w-45 pad-1 round-50vw id="choice4">
+                            4) Error Error Error Error Error
+                        </button>
+                    </div>
+                </div>
+            </center>
+        </div>
+        <script>
+            function beginGame() {
+                document.getElementById("TitlePage").style.display = "none";
+                document.getElementById("Game").style.display = "block";
+            }
+        </script>
+    </body>
 </html>

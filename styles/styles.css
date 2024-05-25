@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+}
+[startButton] {
+    background-color: green;
+    padding: 1%;
+    margin-right: 5%;
+    margin-left:auto;
+    display:block;
+}
+[bold] {
+    font-weight: bold;
+}
+[absolute] {position: absolute;}
+#Game {
+    display: none;
+}
+
+[border-1px-solid-black] { border: 1px solid black;}
+[question] {
+    vertical-align: middle;
+    border:1px solid black
+}
