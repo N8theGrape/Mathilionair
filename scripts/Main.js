@@ -6,7 +6,7 @@ function beginGame() {
 }
 
 function selectChoice(choice) {
-
+    
 }
 
 var questions =[
