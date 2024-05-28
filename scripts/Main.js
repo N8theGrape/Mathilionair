@@ -6,9 +6,9 @@ function beginGame() {
 }
 
 function selectChoice(choice) {
-    console.log(questions);
+
 }
 
-var questions = {
-
-};
+var questions =[
+    
+];
