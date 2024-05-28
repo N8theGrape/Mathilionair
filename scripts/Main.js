@@ -7,12 +7,25 @@ function loadQuestion(number) {
         document.getElementById(`choice${i}`).textContent = `${i}) ${currentQuestionData.answer[i - 1]}`;
     }
     document.getElementById(`prompt`).textContent = `${currentQuestionData.question}`;
+    fixAnswerHeights();
 }
 
 function beginGame() {
     document.getElementById("TitlePage").style.display = "none";
     document.getElementById("Game").style.display = "block";
     loadQuestion(currentQuestion);
+}
+
+function fixAnswerHeights() {
+    var maxHeight = 0;
+    for(var i = 1; i <= 4; i++) {
+        if (document.getElementById(`choice${i}`).scrollHeight >= maxHeight) {
+            maxHeight = document.getElementById(`choice${i}`).scrollHeight;
+        }
+    }
+    for(var i = 1; i <= 4; i++) {
+        document.getElementById(`choice${i}`).style.height = maxHeight;
+    }
 }
 
 function selectChoice(choice) {

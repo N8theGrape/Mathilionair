@@ -40,7 +40,7 @@ let questionData = [
         correctAnswer: 1
     },
     {
-        question: `What is <ERROR 418>?`,
+        question: `What is <img w-90 src=./images/Error418.png>?`,
         answer: [
             "",
             "",
@@ -50,7 +50,7 @@ let questionData = [
         correctAnswer: 3
     },
     {
-        question: "Evaluate <ERROR 418>?",
+        question: "Evaluate <ERROR 418>",
         answer: [
             "",
             "",
@@ -142,11 +142,11 @@ let questionData = [
     {
         question: "What is Mrs. Hanafi's favorite color?",
         answer: [
-            "",
-            "",
-            "",
-            ""
+            "#D4AF37",
+            "#800020",
+            "#00B388",
+            "#CBC3E3"
         ],
-        correctAnswer: 4
+        correctAnswer: 0
     }
 ];

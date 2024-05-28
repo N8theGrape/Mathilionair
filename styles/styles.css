@@ -36,6 +36,19 @@
 
 button {
     font-size: large;
+    vertical-align: middle;
 }
 
 [hidden] {display: none;}
+
+html {
+    background-image: url("../images/background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+[flex] {
+    display: flexbox;
+}
