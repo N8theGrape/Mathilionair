@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="./styles/sizes.css">
         <link rel="stylesheet" href="./styles/rounding.css">
         <link rel="stylesheet" href="./styles/padding.css">
+        <script src="./scripts/questions.js"></script>
         <script src="./scripts/Main.js"></script>
     </head>
     <body>
@@ -39,29 +40,42 @@
             <center>
                 <br><br><br><br><br>
                 <div question w-70 round-50vw pad-1>
-                    <h2>Error Error Error Error Error Error Error Error Error Error Error Error Error?</h2>
+                    <h2 id="prompt">Error Error Error Error Error Error Error Error Error Error Error Error Error?</h2>
                 </div>
                 <br>
                 <div id="choices">
                     <div w-80>
-                        <button w-45 pad-1 round-50vw id="choice1" onclick="selectChoice(1)">
+                        <button w-45 pad-1 round-50vw choiceButton id="choice1" onclick="selectChoice(1)">
                             1) Error Error Error Error Error
                         </button>
-                        <button w-45 pad-1 round-50vw id="choice2" onclick="selectChoice(2)">
+                        <button w-45 pad-1 round-50vw choiceButton id="choice2" onclick="selectChoice(2)">
                             2) Error Error Error Error Error
                         </button>
                     </div>
                     <div w-80>
-                        <button w-45 pad-1 round-50vw id="choice3" onclick="selectChoice(3)">
+                        <button w-45 pad-1 round-50vw choiceButton id="choice3" onclick="selectChoice(3)">
                             3) Error Error Error Error Error
                         </button>
-                        <button w-45 pad-1 round-50vw id="choice4" onclick="selectChoice(4)">
+                        <button w-45 pad-1 round-50vw choiceButton id="choice4" onclick="selectChoice(4)">
                             4) Error Error Error Error Error
                         </button>
                     </div>
                 </div>
                 <br>
-                <button w-36 pad-1 round-50vw disabled id="NextButton" onclick="SumbitAnswer();">Submit</button>
+                <button w-36 pad-1 round-50vw disabled="true" id="SubmitButton" onclick="submitAnswer();">Submit</button>
+                <button hidden w-36 pad-1 round-50vw id="NextButton" onclick="nextQuestion();">Next Question</button>
+            </center>
+        </div>
+        <div hidden id="GameOver">
+            <center>
+                <h1>GAME OVER</h1>
+                Coming soon!
+            </center>
+        </div>
+        <div hidden id="WinScreen">
+            <center>
+                <h1>YOU WIN</h1>
+                Coming soon!
             </center>
         </div>
     </body>

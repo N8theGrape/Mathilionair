@@ -15,9 +15,27 @@
 #Game {
     display: none;
 }
-
+#GameOver {
+    display: none;
+}
 [border-1px-solid-black] { border: 1px solid black;}
 [question] {
     vertical-align: middle;
     border:1px solid black
 }
+
+[choiceButton] {
+    background-color: blue;
+    color: white;
+}
+
+[question] {
+    background-color: blue;
+    color: white;
+}
+
+button {
+    font-size: large;
+}
+
+[hidden] {display: none;}
