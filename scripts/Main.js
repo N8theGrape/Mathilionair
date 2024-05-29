@@ -1,13 +1,13 @@
-var currentQuestion = 1;
+var currentQuestion = 5;
 var selectedAnswer = 0;
-
+var choiceLabels = ["A)","B)","C)","D)"];
 function loadQuestion(number) {
     var currentQuestionData = questionData[number - 1];
     for(var i = 1; i <= 4; i++) {
-        document.getElementById(`choice${i}`).textContent = `${i}) ${currentQuestionData.answer[i - 1]}`;
+        document.getElementById(`choice${i}`).innerHTML = `${choiceLabels[i - 1]} ${currentQuestionData.answer[i - 1]}`;
     }
-    document.getElementById(`prompt`).textContent = `${currentQuestionData.question}`;
-    fixAnswerHeights();
+    document.getElementById(`prompt`).innerHTML = `${questionData[number - 1].question}`;
+    fixAnswerHeights();0
 }
 
 function beginGame() {
@@ -46,7 +46,7 @@ function submitAnswer() {
     document.getElementById(`SubmitButton`).style.display = "none";
     document.getElementById(`NextButton`).style.display = "inline";
     if(questionData[currentQuestion - 1].correctAnswer != selectedAnswer) {
-        document.getElementById(`NextButton`).innerHTML = "Game Over<br>(Click to reload))";
+        document.getElementById(`NextButton`).innerHTML = "Game Over<br>(Click to reload)";
     }
 }
 
