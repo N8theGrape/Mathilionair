@@ -11,10 +11,16 @@
         <link rel="stylesheet" href="./styles/sizes.css">
         <link rel="stylesheet" href="./styles/rounding.css">
         <link rel="stylesheet" href="./styles/padding.css">
+        <link rel="stylesheet" href="./styles/questions.css">
         <script src="./scripts/questions.js"></script>
         <script src="./scripts/Main.js"></script>
     </head>
     <body>
+        <button id="backgroundMusicButton" onclick="toggleMusic()">
+            <img id="soundImg" src="images/sound.png" hidden>
+            <img id="mutedImg" src="images/muted.png" inline>
+            <video id="backgroundMusic" src="audio/genericgameshowmusic.wav" loop></video>
+        </button>
         <div id="TitlePage">
             <br>
             <header>
@@ -26,7 +32,7 @@
             <br>
             <main>
                 <center>
-                    <video w-50 square border-1px-solid-black></video>
+                    <video bg-black w-50 square border-1px-solid-black src="video/scene_1.mp4" controls></video>
                 </center>
                 <br>
                 <div w-100>
@@ -42,7 +48,7 @@
                 <br><br><br><br><br>
                 <br><br><br><br><br>
                 <br><br><br><br><br>
-                <div question w-70 round-50vw pad-1>
+                <div question w-70 round-2vw pad-1>
                     <h2 id="prompt">Error Error Error Error Error Error Error Error Error Error Error Error Error?</h2>
                 </div>
                 <br>
@@ -77,8 +83,8 @@
         </div>
         <div hidden id="WinScreen">
             <center>
+                <br>
                 <h1>YOU WIN</h1>
-                Coming soon!
             </center>
         </div>
     </body>

@@ -1,5 +1,6 @@
 [w-page] {width: 100vw;}
 [h-page] {width: 100vh;}
+[w-0]   {width:    0;}
 [w-1]   {width:   1%;}
 [w-2]   {width:   2%;}
 [w-3]   {width:   3%;}
@@ -59,3 +60,6 @@
 [w-500] {width: 500%;}
 
 [square] {aspect-ratio : 1 / 1;}
+
+[h-1em] {height: 1em}
+[h-6em] {height: 6em}

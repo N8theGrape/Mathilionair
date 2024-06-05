@@ -1,0 +1,8 @@
+[fraction] {
+    height: 1em;
+    display: flex;
+    flex-direction: column;
+}
+[numerator] {
+    display: flex;
+}

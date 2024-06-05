@@ -1,4 +1,4 @@
-var currentQuestion = 5;
+var currentQuestion = 1;
 var selectedAnswer = 0;
 var choiceLabels = ["A)","B)","C)","D)"];
 function loadQuestion(number) {
@@ -7,7 +7,7 @@ function loadQuestion(number) {
         document.getElementById(`choice${i}`).innerHTML = `${choiceLabels[i - 1]} ${currentQuestionData.answer[i - 1]}`;
     }
     document.getElementById(`prompt`).innerHTML = `${questionData[number - 1].question}`;
-    fixAnswerHeights();0
+    fixAnswerHeights();
 }
 
 function beginGame() {
@@ -15,7 +15,9 @@ function beginGame() {
     document.getElementById("Game").style.display = "block";
     loadQuestion(currentQuestion);
 }
-
+function giveAnswer() {
+    return document.getElementById(`choice${questionData[currentQuestion - 1].correctAnswer}`).textContent;
+}
 function fixAnswerHeights() {
     var maxHeight = 0;
     for(var i = 1; i <= 4; i++) {
@@ -84,3 +86,15 @@ function winGame() {
     document.getElementById('Game').style.display = "none";
     document.getElementById('WinScreen').style.display = "inline";
 }
+function toggleMusic() {
+    if(getComputedStyle(document.getElementById('soundImg')).display === "inline") {
+        document.getElementById('soundImg').style.display = "none";
+        document.getElementById('mutedImg').style.display = "inline";
+        document.getElementById('backgroundMusic').pause();
+    } else {
+        document.getElementById('soundImg').style.display = "inline";
+        document.getElementById('mutedImg').style.display = "none";
+        document.getElementById('backgroundMusic').play();
+    }
+}
+

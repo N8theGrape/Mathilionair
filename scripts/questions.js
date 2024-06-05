@@ -40,17 +40,17 @@ let questionData = [
         correctAnswer: 1
     },
     {
-        question: `<img questionImage src="./images/Questions/5.png">`,
+        question: `What is the limit as x approaches 2 of (x-2) over (x²-3x+2)`,
         answer: [
             `0`,
             `1`,
             `-1`,
             `DNE`
         ],
-        correctAnswer: 3
+        correctAnswer: 2
     },
     {
-        question: `Evaluate <ERROR 418>`,
+        question: `Evaluate the integral from 1 to ∞ of (1/x) dx`,
         answer: [
             `Infinity`,
             `0`,
@@ -62,42 +62,42 @@ let questionData = [
     {
         question: `What is the Maclaurin series expansion for sin(x) the the third term?`,
         answer: [
-            ``,
-            ``,
-            `this one`,
-            ``
+            `1 + ⅟₆x³ - ⅟₁₂₀x⁵`,
+            `1 + ⅟₂x² - ⅟₂₄x⁴`,
+            `x + ⅟₆x³ - ⅟₁₂₀x⁵`,
+            `x + ⅟₂x² - ⅟₂₄x⁴`
         ],
         correctAnswer: 3
     },
     {
-        question: `What is the length of r=sec(θ) on the interval 0≤x≤1?`,
+        question: `Is the sum from n=0 to ∞ of (3neⁿ)/(n²+1) divergent or convergent?`,
         answer: [
-            `this one`,
-            ``,
-            ``,
-            ``
+            `Divergent by the nth term test`,
+            `Convergent by the Ratio Test`,
+            `Divergent by the Ratio Test`,
+            `Convergent by the nth term test`
         ],
         correctAnswer: 1
     },
     {
-        question: `At time t, the position of a particle is at x=3t³+4t-2 and y=3t+4. What is the speed of the particle at t=2?`,
+        question: `To what value does the sum from n=0 to ∞ of 2(4/5)ⁿ converge to?`,
         answer: [
-            ``,
-            `this one`,
-            ``,
-            ``
+            `2/5`,
+            `-2/5`,
+            `10`,
+            `-10`
         ],
-        correctAnswer: 2
+        correctAnswer: 3
     },
     {
-        question: `Which of the following is the graph of <ERROR 418>?`,
+        question: `Which of the following is the graph of y=1/√(x)?`,
         answer: [
-            `this one`,
-            ``,
-            ``,
-            ``
+            `Wrong Graph`,
+            `Wrong Graph`,
+            `Wrong Graph`,
+            `Correct Graph`
         ],
-        correctAnswer: 1
+        correctAnswer: 4
     },
     {
         question: `When does a polar cureve have an inner loop?`,
@@ -110,46 +110,50 @@ let questionData = [
         correctAnswer: 2
     },
     {
-        question: `If the <ERROR 418> does not exist, which of the following is true?`,
+        question: `If the limit as x approaches 4 of f(x) does not exist, which of the following is true?<br>
+        I. f(x) is not differentiable at x=4<br>
+        II. f(x) is not continuous at x=4<br>
+        III. f'(a) has an asymptote at x=4
+        `,
         answer: [
-            ``,
-            ``,
-            ``,
-            ``
+            `I only`,
+            `II only`,
+            `I and II only`,
+            `I, II, and III`
         ],
         correctAnswer: 3
     },
     {
-        question: `f(x) is continuous, if <ERROR 418>=f(a), which of the following is true?
-        <br> I.   <Error 418> exists
-        <br> II.  f(x) is differentiable
-        <br> III. f'(a) us continuous
+        question: `If the limit as x approaches a of f(x) equals f(a), which of the following is true?<br>
+        I. the limit as x approaches a of f(x) exists
+        II. f(x) is differentiable
+        III. f'(a) is continuous
         `,
         answer: [
-            `this one`,
-            ``,
-            ``,
-            ``
+            `I only`,
+            `II only`,
+            `II and III only`,
+            `I, II, and III`
         ],
         correctAnswer: 1
     },
     {
-        question: `Find <ERROR 418>. (hint: sin²(x)=1-cos²(x))`,
+        question: `Find the integral of sin⁵(x)cos²(x) dx`,
         answer: [
-            ``,
-            ``,
-            ``,
-            `this one`
+            ` ⅟₃cos³x - ⅖cos⁵x - ⅐cos⁷x + C`,
+            ` ⅟₃cos³x + ⅖cos⁵x - ⅐cos⁷x + C`,
+            ` ⅟₃cos³x - ⅖cos⁵x + ⅐cos⁷x + C`,
+            `-⅟₃cos³x + ⅖cos⁵x - ⅐cos⁷x + C`
         ],
         correctAnswer: 4
     },
     {
         question: `What is Mrs. Hanafi's favorite color?`,
         answer: [
-            `#D4AF37`,
-            `#800020`,
-            `#00B388`,
-            `#CBC3E3`
+            `Gold`,
+            `Dark Red`,
+            `Lime Green`,
+            `Light Purple`
         ],
         correctAnswer: 4
     }
