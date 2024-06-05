@@ -1,12 +1,16 @@
 var currentQuestion = 1;
 var selectedAnswer = 0;
 var choiceLabels = ["A)","B)","C)","D)"];
+
 function loadQuestion(number) {
     var currentQuestionData = questionData[number - 1];
     for(var i = 1; i <= 4; i++) {
         document.getElementById(`choice${i}`).innerHTML = `${choiceLabels[i - 1]} ${currentQuestionData.answer[i - 1]}`;
     }
-    document.getElementById(`prompt`).innerHTML = `${questionData[number - 1].question}`;
+    document.getElementById('sounds').src = `audio/question/Q${currentQuestion}.wav`
+    document.getElementById(`prompt`).innerHTML = `
+    <button onclick="document.getElementById('sounds').currentTime = 0;document.getElementById('sounds').play();"style="border-radius: 50%; width: 2em; height: 2em;"><img w-100 h-100 src="images/sound.png"></button>
+    ${questionData[number - 1].question}`;
     fixAnswerHeights();
 }
 
@@ -47,9 +51,13 @@ function submitAnswer() {
     document.getElementById(`choice${questionData[currentQuestion - 1].correctAnswer}`).style.backgroundColor = "green" // Set to color for wrong answer
     document.getElementById(`SubmitButton`).style.display = "none";
     document.getElementById(`NextButton`).style.display = "inline";
+    document.getElementById('sounds').src = `audio/pass/passQ${currentQuestion}.wav`
     if(questionData[currentQuestion - 1].correctAnswer != selectedAnswer) {
         document.getElementById(`NextButton`).innerHTML = "Game Over<br>(Click to reload)";
+        document.getElementById('sounds').src = `audio/fail/failQ${currentQuestion}.wav`
     }
+    document.getElementById('sounds').currentTime = 0;
+    document.getElementById('sounds').play();
 }
 
 function gameOver() {
