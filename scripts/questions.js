@@ -92,10 +92,10 @@ let questionData = [
     {
         question: `Which of the following is the graph of y=1/√(x)?`,
         answer: [
-            `Wrong Graph`,
-            `Wrong Graph`,
-            `Wrong Graph`,
-            `Correct Graph`
+            `<img h-6em src="images/option1.PNG">`,
+            `<img h-6em src="images/option2.PNG">`,
+            `<img h-6em src="images/option3.PNG">`,
+            `<img h-6em src="images/option4.PNG">`
         ],
         correctAnswer: 4
     },
